@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="webframe">
+
+        <div class="nav-container">
+            <div class="nav-desktop">
+                <img onclick="goToIndex()" src="assets/Logo.svg" class="logo" alt="Logo">
+                <div class="nav-items">
+                    <div class="item-group">
+                        <a href="works.html" class="primary-link">Works</a>
+                        <a href="works.html" class="hover-link">Works</a>
+                    </div>
+                    <div class="item-group">
+                        <a href="about.html" class="primary-link">About</a>
+                        <a href="about.html" class="hover-link">About</a>
+                    </div>
+                    <div class="item-group">
+                        <a href="mailto:baginskijakub@icloud.com" class="primary-link">Contact</a>
+                        <a href="mailto:baginskijakub@icloud.com" class="hover-link">Contact</a>
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="nav-mobile">
+                        <img onclick="goToIndex()" src="assets/Logo.svg" class="logo" alt="Logo">
+                        <img class="nav-icon" src="assets/NavClosed.svg" class="logo" alt="Logo">
+            
+            </div>
+            <div class="nav-mobile-open d-none">
+                <div class="nav-items">
+                    <div onclick="goToWorks();" class="item-group"><a class="primary-link">Works</a>
+                        <a href="works.html" class="hover-link">Works</a>
+                    </div>
+                    <div onclick="goToAbout();" class="item-group"><a class="primary-link">About</a>
+                        <a href="about.html" class="hover-link">About</a>
+                    </div>
+                    <div href="mailto:baginskijakub@icloud.com" class="item-group"><a class="primary-link">Contact</a>
+                        <a href="mailto:baginskijakub@icloud.com" class="hover-link">Contact</a>
+                    </div>
+            </div>
+            </div>
+            </div>
+
+    <div class="works_component" style="margin-top: 128px;">
+        <div class="works_title_component" data-aos="fade-right">
+            <div class="about_line"></div>
+            <a class="font works_title">UI Design</a>
+        </div>
+        <div class="works_content_component" data-aos="fade-up">
+            <img src="ui/gym.mockup.jpg" alt="Gym app concept">
+            <img src="ui/use2connect.mockup.jpg" alt="Gym app concept">
+        </div>  
+        <div class="works_content_component" data-aos="fade-up">
+            <img src="ui/spr2.mockup.jpg" alt="Gym app concept">  
+            <img src="ui/gym.mockup.jpg" alt="Gym app concept">
+        </div>  
+    </div>
+
+    <div class="works_component">
+        <div class="works_title_component" data-aos="fade-right">
+            <div class="about_line"></div>
+            <a class="font works_title">Branding</a>
+        </div>
+        <div class="works_content_component" data-aos="fade-up">
+            <img src="branding/obp2.jpg" alt="Gym app concept">
+            <img src="branding/rouge-yellow.jpg" alt="Gym app concept">
+        </div>  
+        <div class="works_content_component" data-aos="fade-up">
+            <img src="branding/cannacare.jpg" alt="Gym app concept">  
+            <img src="branding/tempt.jpg" alt="Gym app concept">
+        </div>  
+    </div>
+
+    <div class="works_component">
+        <div class="works_title_component" data-aos="fade-right">
+            <div class="about_line"></div>
+            <a class="font works_title">Print</a>
+        </div>
+        <div class="works_content_component" data-aos="fade-up">
+            <img src="print/rouge-mockup.jpg" alt="Gym app concept">
+            <img src="print/dstg-mockup.jpg" alt="Gym app concept">
+        </div>   
+    </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="inner_footer"  data-aos="fade-right">
+        <div class="footer_third">
+            <div class="footer_line">
+
+            </div>
+            <h1 class="font footer_title" >Collaborate With Me</h1>
+        </div>
+        <div  onmouseover="document.getElementById('icon').src='icons/arrow_dark.svg'" onmouseout="document.getElementById('icon').src='icons/arrow.svg'" onclick="sendEmail();" class="contact_button">
+            <a class="font footer_text">Contact</a>
+            <img  id="icon"src="icons/arrow.svg" alt="arrow">
+        </div>
+        <div class="socials" >
+            <a href="https://www.behance.net/jakubbaginski" class="font footer_text" >Behance</a>
+            <a href="https://www.linkedin.com/in/jakub-baginski-b3618b223/" class="font footer_text" >Linkedin</a>
+        </div>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+<script>
+    AOS.init(
+        {
+            once: true
+        }
+    );
+    function sendEmail() 
+{
+    window.location = "mailto:baginskijakub@icloud.com";
+}
+
+function goToAbout() 
+{
+    window.location = "about.html";
+}
+function goToWorks() 
+{
+    window.location = "works.html";
+}
+function goToIndex() 
+{
+    window.location = "index.html";
+}
+
+
+</script>
+</html>
