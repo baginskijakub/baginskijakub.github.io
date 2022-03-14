@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="webframe">
+
+        <div class="nav-container">
+            <div class="nav-desktop">
+                <img onclick="goToIndex()" src="assets/Logo.svg" class="logo" alt="Logo">
+                <div class="nav-items">
+                    <div class="item-group">
+                        <a href="works.html" class="primary-link">Works</a>
+                        <a href="works.html" class="hover-link">Works</a>
+                    </div>
+                    <div class="item-group">
+                        <a href="about.html" class="primary-link">About</a>
+                        <a href="about.html" class="hover-link">About</a>
+                    </div>
+                    <div class="item-group">
+                        <a href="mailto:baginskijakub@icloud.com" class="primary-link">Contact</a>
+                        <a href="mailto:baginskijakub@icloud.com" class="hover-link">Contact</a>
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="nav-mobile">
+                        <img onclick="goToIndex()" src="assets/Logo.svg" class="logo" alt="Logo">
+                        <img class="nav-icon" src="assets/NavClosed.svg" class="logo" alt="Logo">
+            
+            </div>
+            <div class="nav-mobile-open d-none">
+                <div class="nav-items">
+                    <div onclick="goToWorks();" class="item-group"><a class="primary-link">Works</a>
+                        <a href="works.html" class="hover-link">Works</a>
+                    </div>
+                    <div onclick="goToAbout();" class="item-group"><a class="primary-link">About</a>
+                        <a href="about.html" class="hover-link">About</a>
+                    </div>
+                    <div href="mailto:baginskijakub@icloud.com" class="item-group"><a class="primary-link">Contact</a>
+                        <a href="mailto:baginskijakub@icloud.com" class="hover-link">Contact</a>
+                    </div>
+            </div>
+            </div>
+            </div>
+
+    <div class="head_section">
+            <div class="h1_heading" data-aos="fade-right">
+                <h1 class="about_head_text font">My name is Jakub Baginski.</h1>
+            </div>
+            
+        <div class="a_heading" >
+            <a class="a_text font" data-aos="fade-right">
+                I am a designer studying Software Technology Engineering at VIA University College Horsens, Denmark.
+            </a>
+            <div data-aos="fade-up">
+                <img class="head_img"src="about/about-head.jpg" alt="Gym app concept" >
+            </div>
+
+        </div>
+        </div>
+        <div class="body_frame">
+
+        
+        <div class="about_component">
+            <div class="about_component_head" data-aos="fade-right">
+                <div class="about_line"></div>
+                <a class="font about_component_head_text">Design</a>
+                <a class="font about_component_description">I have been practising graphic design since I was 14 when my uncle installed Adobe Illustrator on my PC.</a>
+            </div>
+            <img src="ui/spr2.mockup.jpg" alt="Gym app concept" data-aos="fade-up">
+        </div>
+
+        <div class="about_component">
+            <div class="about_component_head" data-aos="fade-right">
+                <div class="about_line"></div>
+                <a class="font about_component_head_text">Development</a>
+                <a class="font about_component_description">On my degree I have learned a lot  about development. I am a begginer user of HTML, CSS, JavaScript and Java.</a>
+            </div>
+            <img src="about/development.jpg" alt="Gym app concept" data-aos="fade-up">
+        </div>
+
+        <div class="about_component">
+            <div class="about_component_head" data-aos="fade-right">
+                <div class="about_line"></div>
+                <a class="font about_component_head_text">Handball </a>
+                <a class="font about_component_description">During my spare time I love to play handball. I am usually playing as a playmaker or left back.</a>
+            </div>
+            <img src="about/handball.jpg" alt="Gym app concept" data-aos="fade-up">
+        </div>
+    </div>
+    
+            
+</div>
+<div class="footer">
+    <div class="inner_footer" data-aos="fade-right">
+        <div class="footer_third" >
+            <div class="footer_line">
+
+            </div>
+            <h1 class="font footer_title" >Collaborate With Me</h1>
+        </div>
+        <div  onmouseover="document.getElementById('icon').src='icons/arrow_dark.svg'" onmouseout="document.getElementById('icon').src='icons/arrow.svg'" onclick="sendEmail();" class="contact_button" >
+            <a class="font footer_text">Contact</a>
+            <img  id="icon"src="icons/arrow.svg" alt="arrow">
+        </div>
+        <div class="socials" >
+            <a href="https://www.behance.net/jakubbaginski" class="font footer_text" >Behance</a>
+            <a href="https://www.linkedin.com/in/jakub-baginski-b3618b223/" class="font footer_text" >Linkedin</a>
+        </div>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+<script>
+    AOS.init(
+        {
+            once: true
+        }
+    );
+    function sendEmail() 
+{
+    window.location = "mailto:baginskijakub@icloud.com";
+}
+
+function goToAbout() 
+{
+    window.location = "about.html";
+}
+function goToWorks() 
+{
+    window.location = "works.html";
+}
+function goToIndex() 
+{
+    window.location = "index.html";
+}
+
+
+
+</script>
+</html>

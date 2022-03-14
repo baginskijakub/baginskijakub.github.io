@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+    <div class="webframe">
+        <div class="nav-container">
+            <div class="nav-desktop">
+                <img onclick="goToIndex()" src="assets/Logo.svg" class="logo" alt="Logo">
+                <div class="nav-items">
+                    <div class="item-group">
+                        <a href="works.html" class="primary-link">Works</a>
+                        <a href="works.html" class="hover-link">Works</a>
+                    </div>
+                    <div class="item-group">
+                        <a href="about.html" class="primary-link">About</a>
+                        <a href="about.html" class="hover-link">About</a>
+                    </div>
+                    <div class="item-group">
+                        <a href="mailto:baginskijakub@icloud.com" class="primary-link">Contact</a>
+                        <a href="mailto:baginskijakub@icloud.com" class="hover-link">Contact</a>
+                    </div>
+            
+            
+                </div>
+            </div>
+            <div class="nav-mobile">
+                        <img onclick="goToIndex()" src="assets/Logo.svg" class="logo" alt="Logo">
+                        <img class="nav-icon" src="assets/NavClosed.svg" class="logo" alt="Logo">
+            
+            </div>
+            <div class="nav-mobile-open d-none">
+                <div class="nav-items">
+                    <div onclick="goToWorks();" class="item-group"><a class="primary-link">Works</a>
+                        <a href="works.html" class="hover-link">Works</a>
+                    </div>
+                    <div onclick="goToAbout();" class="item-group"><a class="primary-link">About</a>
+                        <a href="about.html" class="hover-link">About</a>
+                    </div>
+                    <div href="mailto:baginskijakub@icloud.com" class="item-group"><a class="primary-link">Contact</a>
+                        <a href="mailto:baginskijakub@icloud.com" class="hover-link">Contact</a>
+                    </div>
+            </div>
+            </div>
+            </div>
+    <div class="head_section">
+            <div class="h1_heading" data-aos="fade-right">
+                <h1 class="head_text font">Hi there!</h1>
+            </div>
+            
+        <div class="a_heading" data-aos="fade-right">
+            <a class="a_text font">
+                My name is Jakub Baginski. <br>
+I am a designer based in Horsens, Denmark. <br>
+I design simple solutions to complex problems. 
+            </a>
+        </div>
+    </div>
+    <div class="portfolio_panel">
+        <div class="head_portfolio_panel">
+            <div class="title_component">
+                <a class="line" data-aos="fade-right">
+
+                </a>
+            <a class="title_component_text font" data-aos="fade-up" > 
+                UX Case Studies
+            </a>
+            </div>
+            <div class="link_hover head_image_component " data-aos="fade-up">
+                <img onclick="goToExpiring();" src="case_studies/expiring.jpg" alt="Food waste app concept">
+                <div class="img_description" data-aos="fade-up">
+                    <a  class="img_description_a font" >Expiring</a>
+                    <a class="img_description_a font" style="color: #B4B4B4;">Mobile app concept</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="portfolio_panel" >
+            <div class="head_portfolio_panel">
+                    <div class="title_component">
+                            <a class="line" data-aos="fade-right">
+
+                            </a>
+                            <a class="title_component_text font" data-aos="fade-up" > 
+                                User Interface
+                            </a>
+                    </div>
+                    <div class="head_image_component" data-aos="fade-up">
+                        <img src="ui/gym.mockup.jpg" alt="Gym app concept">
+                        <div class="img_description" data-aos="fade-up">
+                            <a class="img_description_a font" >GymTracker</a>
+                            <a class="img_description_a font" style="color: #B4B4B4;">WorkoutTracker</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="body_portfolio_panel">   
+                <div class="body_image_component" data-aos="fade-up">
+                    <img src="ui/use2connect.mockup.jpg" alt="Gym app concept">
+                    <div class="img_description" data-aos="fade-up">
+                        <a class="img_description_a font" >USE2CONNECT</a>
+                        <a class="img_description_a font" style="color: #B4B4B4;">Rethinked job finder</a>
+                    </div>
+                </div>
+                <div class="body_image_component" data-aos="fade-up">
+                    <img src="ui/spr2.mockup.jpg" alt="Gym app concept">
+                    <div class="img_description" data-aos="fade-up">
+                        <a class="img_description_a font" >SPR BOR</a>
+                        <a class="img_description_a font" style="color: #B4B4B4;">Handball team</a>
+                    </div>
+                </div>
+
+            </div>
+            
+    </div>
+    <div class="portfolio_panel">
+        <div class="head_portfolio_panel">
+                <div class="title_component" data-aos="fade-right">
+                        <a class="line" >
+
+                        </a>
+                        <a class="title_component_text font" > 
+                            Branding
+                        </a>
+                </div>
+                <div class="head_image_component" data-aos="fade-up">
+                    <img src="branding/rouge-yellow.jpg" alt="Gym app concept">
+                    <div class="img_description" data-aos="fade-up">
+                        <a class="img_description_a font" >Rude Swim</a>
+                        <a class="img_description_a font" style="color: #B4B4B4;">Edgy swimwear brand</a>
+                    </div>
+                </div>
+        </div>
+        <div class="body_portfolio_panel">   
+            <div class="body_image_component" data-aos="fade-up">
+                <img src="branding/obp2.jpg" alt="Gym app concept">
+                <div class="img_description" data-aos="fade-up">
+                    <a class="img_description_a font" >Old Brick Pit</a>
+                    <a class="img_description_a font" style="color: #B4B4B4;">BBQ restaurant</a>
+                </div>
+            </div>
+            <div class="body_image_component" data-aos="fade-up">
+                <img src="branding/tempt.jpg" alt="Gym app concept">
+                <div class="img_description" data-aos="fade-up">
+                    <a class="img_description_a font" >Temptress Brew</a>
+                    <a class="img_description_a font" style="color: #B4B4B4;">Organic teas, tonics & blends</a>
+                </div>
+            </div>
+
+        </div>
+        
+</div>
+<div class="portfolio_panel">
+    <div class="head_portfolio_panel">
+            <div class="title_component" data-aos="fade-right">
+                    <a class="line">
+
+                    </a>
+                    <a class="title_component_text font" > 
+                        Print
+                    </a>
+            </div>
+            <div class="head_image_component" data-aos="fade-up">
+                <img src="print/rouge-mockup.jpg" alt="Gym app concept">
+                <div class="img_description" data-aos="fade-up">
+                    <a class="img_description_a font" >Rouge</a>
+                    <a class="img_description_a font" style="color: #B4B4B4;">Streetwear brand</a>
+                </div>
+            </div>
+    </div>
+    <div class="body_portfolio_panel">   
+        <div class="body_image_component" data-aos="fade-up">
+            <img src="print/dstg-mockup.jpg" alt="Gym app concept">
+            <div class="img_description" data-aos="fade-up">
+                <a class="img_description_a font" >Distinguished.</a>
+                <a class="img_description_a font" style="color: #B4B4B4;">Cosmetics brand</a>
+            </div>
+        </div>
+        <div class="body_image_component" data-aos="fade-up">
+            <img src="print/Cannacare.jpg" alt="Gym app concept">
+            <div class="img_description" data-aos="fade-up">
+                <a class="img_description_a font" >Cannacare</a>
+                <a class="img_description_a font" style="color: #B4B4B4;">Medical marihuanna oils</a>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+    <div class="footer">
+        <div class="inner_footer" data-aos="fade-right">
+            <div class="footer_third" >
+                <div class="footer_line">
+    
+                </div>
+                <h1 class="font footer_title" >Collaborate With Me</h1>
+            </div>
+            <div  onmouseover="document.getElementById('icon').src='icons/arrow_dark.svg'" onmouseout="document.getElementById('icon').src='icons/arrow.svg'" onclick="sendEmail();" class="contact_button"  >
+                <a class="font footer_text">Contact</a>
+                <img  id="icon"src="icons/arrow.svg" alt="arrow">
+            </div>
+            <div class="socials" >
+                <a href="https://www.behance.net/jakubbaginski" class="font footer_text" >Behance</a>
+                <a href="https://www.linkedin.com/in/jakub-baginski-b3618b223/" class="font footer_text" >Linkedin</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+    <script src="script.js"></script>
+</body>
+<script>
+    AOS.init(
+        {
+            once: true
+        }
+    );
+    function sendEmail() 
+{
+    window.location = "mailto:baginskijakub@icloud.com";
+}
+
+function goToAbout() 
+{
+    window.location = "about.html";
+}
+function goToWorks() 
+{
+    window.location = "works.html";
+}
+function goToIndex() 
+{
+    window.location = "index.html";
+}
+function goToExpiring()
+{
+    window.open("https://www.behance.net/gallery/139423191/Expiring-App-UX-Case-Study");
+
+}
+
+
+</script>
+</html>
